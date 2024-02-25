@@ -7,11 +7,11 @@
 
 </p>
 
-## Introduce
+## 介绍
 
-Download the node package to the specified location
+下载 node pacakge 到指定位置
 
-## Usage
+## 使用
 
 ```sh
 npm i @x.render/render-package -S
@@ -21,17 +21,17 @@ npm i @x.render/render-package -S
 const package = new Package(options);
 ```
 
-### options
+### 选项
 
-| name      | description               | type   | required | default  |
-| --------- | ------------------------- | ------ | -------- | -------- |
-| version   | package version           | string | no       | latest   |
-| pkgName   | package name              | string | yes      | null     |
-| storePath | Package storage directory | string | no       | packages |
+| 名称      | 描述         | 类型   | 必填 | default  |
+| --------- | ------------ | ------ | ---- | -------- |
+| version   | 包版本       | string | 否   | latest   |
+| pkgName   | 包名称       | string | 是   | null     |
+| storePath | 包的存储目录 | string | 否   | packages |
 
-### Usage examples
+### 使用示例
 
-Here are some usage examples
+下面是一些使用示例
 
 ```javascript
 const package = new Package({

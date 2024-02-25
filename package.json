@@ -1,0 +1,37 @@
+{
+  "name": "@x.render/render-package",
+  "version": "1.1.0",
+  "description": "Download the node package to the specified location",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "eslint-fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prepare": "npx render-lint init  --force",
+    "render-lint-fix": "npm run eslint-fix"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@x.render/render-node-utils": "^1.1.1",
+    "fs-extra": "^11.1.0",
+    "npminstall": "^6.6.2",
+    "path-exists": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@x.render/render-lint": "^1.1.2",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint"
+  }
+}
