@@ -20,6 +20,7 @@ npm i @x.render/render-package -S
 ```
 
 ```javascript
+const Package = require("@x.render/render-package");
 const package = new Package(options);
 ```
 
