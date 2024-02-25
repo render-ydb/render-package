@@ -7,6 +7,8 @@
 
 </p>
 
+[英文文档](./README.md)
+
 ## 介绍
 
 下载 node pacakge 到指定位置

@@ -7,6 +7,8 @@
 
 </p>
 
+[中文文档](./README.zh.md)
+
 ## Introduce
 
 Download the node package to the specified location
