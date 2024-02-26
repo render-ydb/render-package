@@ -26,11 +26,12 @@ const package = new Package(options);
 
 ### options
 
-| name      | description               | type   | required | default  |
-| --------- | ------------------------- | ------ | -------- | -------- |
-| version   | package version           | string | no       | latest   |
-| pkgName   | package name              | string | yes      | null     |
-| storePath | Package storage directory | string | no       | packages |
+| name      | description               | type   | required | default                    |
+| --------- | ------------------------- | ------ | -------- | -------------------------- |
+| version   | package version           | string | no       | latest                     |
+| pkgName   | package name              | string | yes      | null                       |
+| storePath | Package storage directory | string | no       | packages                   |
+| registry  | npm mirror address        | string | no       | https://registry.npmjs.org |
 
 ### Usage examples
 

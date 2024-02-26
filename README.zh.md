@@ -26,11 +26,12 @@ const package = new Package(options);
 
 ### 选项
 
-| 名称      | 描述         | 类型   | 必填 | default  |
-| --------- | ------------ | ------ | ---- | -------- |
-| version   | 包版本       | string | 否   | latest   |
-| pkgName   | 包名称       | string | 是   | null     |
-| storePath | 包的存储目录 | string | 否   | packages |
+| 名称      | 描述         | 类型   | 必填 | default                    |
+| --------- | ------------ | ------ | ---- | -------------------------- |
+| version   | 包版本       | string | 否   | latest                     |
+| pkgName   | 包名称       | string | 是   | null                       |
+| storePath | 包的存储目录 | string | 否   | packages                   |
+| registry  | npm 镜像地址 | string | 否   | https://registry.npmjs.org |
 
 ### 使用示例
 

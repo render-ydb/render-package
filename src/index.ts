@@ -11,24 +11,28 @@ interface Options {
   version?: string;
   pkgName: string;
   storePath?: string;
+  registry?: string;
 }
 
 class Package {
   version?: string;
   pkgName: string;
   storePath?: string;
-  pkgPath: string;
+  pkgPath?: string;
+  registry?: string;
 
   constructor(
     options: Options = {
       version: 'latest',
       pkgName: '',
       storePath: 'packages',
+      registry: 'https://registry.npmjs.org',
     },
   ) {
     this.version = options.version;
     this.pkgName = options.pkgName;
     this.storePath = options.storePath;
+    this.registry = options.registry;
   }
 
   async prepare() {
@@ -40,7 +44,7 @@ class Package {
   }
 
   async getNpmPkgLatestVersion() {
-    return await getNpmPkgLatestVersion(this.pkgName);
+    return await getNpmPkgLatestVersion(this.pkgName, this.registry);
   }
 
   async install(version?: string) {
