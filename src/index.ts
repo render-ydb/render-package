@@ -20,19 +20,15 @@ class Package {
   storePath?: string;
   pkgPath?: string;
   registry?: string;
-
   constructor(
     options: Options = {
-      version: 'latest',
       pkgName: '',
-      storePath: 'packages',
-      registry: 'https://registry.npmjs.org',
     },
   ) {
-    this.version = options.version;
+    this.version = options.version || 'latest';
     this.pkgName = options.pkgName;
-    this.storePath = options.storePath;
-    this.registry = options.registry;
+    this.storePath = options.storePath || 'packages';
+    this.registry = options.registry || 'https://registry.npmjs.org';
   }
 
   async prepare() {
